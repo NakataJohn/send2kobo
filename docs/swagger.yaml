@@ -1,0 +1,283 @@
+definitions:
+  domain.Book:
+    properties:
+      hash:
+        type: string
+      id:
+        type: string
+      kepubpath:
+        type: string
+      khash:
+        type: string
+      path:
+        type: string
+      title:
+        type: string
+    type: object
+  domain.ErrorResponse:
+    properties:
+      message:
+        description: 错误信息
+        type: string
+    type: object
+  domain.LoginRequest:
+    properties:
+      email:
+        type: string
+      password:
+        type: string
+    required:
+    - email
+    - password
+    type: object
+  domain.LoginResponse:
+    properties:
+      accessToken:
+        type: string
+      refreshToken:
+        type: string
+    type: object
+  domain.Profile:
+    properties:
+      email:
+        description: 邮箱
+        type: string
+      name:
+        description: 姓名
+        type: string
+    type: object
+  domain.RefreshTokenRequest:
+    properties:
+      refreshToken:
+        type: string
+    required:
+    - refreshToken
+    type: object
+  domain.RefreshTokenResponse:
+    properties:
+      accessToken:
+        type: string
+      refreshToken:
+        type: string
+    type: object
+  domain.SignupRequest:
+    properties:
+      email:
+        type: string
+      name:
+        type: string
+      password:
+        type: string
+    required:
+    - email
+    - name
+    - password
+    type: object
+  domain.SignupResponse:
+    properties:
+      accessToken:
+        type: string
+      refreshToken:
+        type: string
+    type: object
+  domain.SuccessResponse:
+    properties:
+      message:
+        type: string
+    type: object
+info:
+  contact:
+    email: support@swagger.io
+    url: http://www.swagger.io/support
+  description: Send2Kobo Api
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: Send2Kobo Api
+  version: v1.0.0
+paths:
+  /api/v1/book:
+    get:
+      consumes:
+      - application/json
+      description: 获取图书列表
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.ErrorResponse'
+      security:
+      - token: []
+      summary: Fetch All Books
+      tags:
+      - Book
+  /api/v1/book/{id}/:
+    delete:
+      description: 删除图书
+      parameters:
+      - in: path
+        name: id
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.ErrorResponse'
+      security:
+      - token: []
+      summary: Delete Book by id
+      tags:
+      - Book
+    get:
+      description: 获取图书
+      parameters:
+      - in: path
+        name: id
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.ErrorResponse'
+      security:
+      - token: []
+      summary: Fetch Book by id
+      tags:
+      - Book
+  /api/v1/book/{id}/download:
+    get:
+      description: 下载图书
+      parameters:
+      - in: path
+        name: id
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.ErrorResponse'
+      security:
+      - token: []
+      summary: Download Book by id
+      tags:
+      - Book
+  /api/v1/book/upload:
+    post:
+      consumes:
+      - multipart/form-data
+      description: 传文件：epub文件
+      parameters:
+      - description: 书籍名
+        in: formData
+        name: title
+        type: string
+      - description: file
+        in: formData
+        name: fileName
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.ErrorResponse'
+      security:
+      - token: []
+      summary: upload epub book file
+      tags:
+      - Book
+  /api/v1/login:
+    post:
+      consumes:
+      - application/json
+      description: 登录
+      parameters:
+      - description: E-mail/密码
+        in: body
+        name: auth
+        required: true
+        schema:
+          $ref: '#/definitions/domain.LoginRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.ErrorResponse'
+      summary: Login
+      tags:
+      - User
+  /api/v1/profile:
+    get:
+      consumes:
+      - application/json
+      description: 查询用户信息
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.ErrorResponse'
+      security:
+      - token: []
+      summary: Fetch user profile
+      tags:
+      - User
+  /api/v1/refresh:
+    post:
+      parameters:
+      - description: refresh token
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/domain.RefreshTokenRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.ErrorResponse'
+      summary: RefreshToken
+      tags:
+      - User
+  /api/v1/signup:
+    post:
+      description: 注册接口
+      parameters:
+      - description: 用户名,邮箱,密码
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/domain.SignupRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.ErrorResponse'
+      summary: Sign up
+      tags:
+      - User
+securityDefinitions:
+  token:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"

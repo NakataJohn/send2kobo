@@ -1,0 +1,53 @@
+2024-05-16 09:25:02	INFO	logger/logger.go:84	App is starting...
+2024-05-16 09:25:02	INFO	logger/logger.go:84	The App is running in development env
+2024-05-16 01:25:02	INFO	logger/logger.go:84	timeout:2s
+
+2024-05-16 01:25:19	ERROR	logger/logger.go:96	access_token_secretToken is expired
+2024-05-16 01:26:10	ERROR	logger/logger.go:96	exit status 1
+2024-05-16 09:28:56	INFO	logger/logger.go:84	App is starting...
+2024-05-16 09:28:56	INFO	logger/logger.go:84	The App is running in development env
+2024-05-16 01:28:56	INFO	logger/logger.go:84	timeout:2s
+
+2024-05-16 01:29:40	INFO	logger/logger.go:80	kepubify assets/upload/1Q84 BOOK 1.epub -o assets/kepub/1Q84 BOOK 1.kepub.epub
+2024-05-16 01:29:40	ERROR	logger/logger.go:96	exit status 1
+2024-05-16 09:38:06	INFO	logger/logger.go:84	App is starting...
+2024-05-16 09:38:06	INFO	logger/logger.go:84	The App is running in development env
+2024-05-16 01:38:06	INFO	logger/logger.go:84	timeout:2s
+
+2024-05-16 01:38:10	INFO	logger/logger.go:80	kepubify assets/upload/1Q84 BOOK 1.epub -o assets/kepub/1Q84 BOOK 1.kepub.epub
+2024-05-16 01:38:10	ERROR	logger/logger.go:96	exit status 1
+2024-05-16 09:38:22	INFO	logger/logger.go:84	App is starting...
+2024-05-16 09:38:22	INFO	logger/logger.go:84	The App is running in development env
+2024-05-16 01:38:22	INFO	logger/logger.go:84	timeout:2s
+
+2024-05-16 09:50:26	INFO	logger/logger.go:84	App is starting...
+2024-05-16 09:50:26	INFO	logger/logger.go:84	The App is running in development env
+2024-05-16 01:50:36	ERROR	logger/logger.go:96	server selection error: context deadline exceeded, current topology: { Type: Unknown, Servers: [{ Addr: 192.168.145.235:27017, Type: Unknown }, ] }
+2024-05-16 01:50:36	INFO	logger/logger.go:84	timeout:2s
+
+2024-05-16 01:50:44	INFO	logger/logger.go:80	kepubify assets/upload/1Q84 BOOK 1.epub -o assets/kepub/1Q84 BOOK 1.kepub.epub
+2024-05-16 01:50:44	ERROR	logger/logger.go:96	exit status 1
+2024-05-16 10:08:53	INFO	logger/logger.go:84	App is starting...
+2024-05-16 10:08:53	INFO	logger/logger.go:84	The App is running in development env
+2024-05-16 02:09:03	ERROR	logger/logger.go:96	server selection error: context deadline exceeded, current topology: { Type: Unknown, Servers: [{ Addr: 192.168.145.235:27017, Type: Unknown }, ] }
+2024-05-16 02:09:03	INFO	logger/logger.go:84	timeout:2s
+
+2024-05-16 02:10:04	INFO	logger/logger.go:80	kepubify assets/upload/1Q84 BOOK 1.epub -o assets/kepub/1Q84 BOOK 1.kepub.epub
+2024-05-16 02:10:04	ERROR	logger/logger.go:96	exit status 1
+2024-05-16 10:12:40	INFO	logger/logger.go:84	App is starting...
+2024-05-16 10:12:40	INFO	logger/logger.go:84	The App is running in development env
+2024-05-16 02:12:50	ERROR	logger/logger.go:96	server selection error: context deadline exceeded, current topology: { Type: Unknown, Servers: [{ Addr: 192.168.145.235:27017, Type: Unknown }, ] }
+2024-05-16 02:12:50	INFO	logger/logger.go:84	timeout:2s
+
+2024-05-16 02:12:53	INFO	logger/logger.go:80	kepubify assets/upload/1Q84_BOOK_1.epub -o assets/kepub/1Q84_BOOK_1.kepub.epub
+2024-05-16 02:12:53	ERROR	logger/logger.go:96	exit status 1
+2024-05-16 10:16:53	INFO	logger/logger.go:84	App is starting...
+2024-05-16 10:16:53	INFO	logger/logger.go:84	The App is running in development env
+2024-05-16 02:17:03	ERROR	logger/logger.go:96	server selection error: context deadline exceeded, current topology: { Type: Unknown, Servers: [{ Addr: 192.168.145.235:27017, Type: Unknown }, ] }
+2024-05-16 02:17:03	INFO	logger/logger.go:84	timeout:2s
+
+2024-05-16 02:17:14	INFO	logger/logger.go:80	kepubify assets/upload/El_amor_en_los_tiempos_del_cólera.epub -o assets/kepub/El_amor_en_los_tiempos_del_cólera.kepub.epub
+2024-05-16 11:05:21	INFO	logger/logger.go:84	App is starting...
+2024-05-16 11:05:21	INFO	logger/logger.go:84	The App is running in development env
+2024-05-16 03:05:21	INFO	logger/logger.go:84	timeout:2s
+

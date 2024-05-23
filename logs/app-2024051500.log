@@ -1,0 +1,51 @@
+2024-05-15 10:20:52	INFO	logger/logger.go:84	App is starting...
+2024-05-15 10:20:52	INFO	logger/logger.go:84	The App is running in development env
+2024-05-15 02:20:58	INFO	logger/logger.go:84	authHeader: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia29ibyIsImlkIjoiNjY0MzI5Zjk4YmIxMjg5MDY5ZTdhMjg3IiwiZXhwIjoxNzE1NzQ2MzQyfQ._4iBmKB15zFGjG8UBntEaT8Xoqd3ZeyLeI1k9MXJFR4,and len: 1
+
+2024-05-15 02:21:32	INFO	logger/logger.go:84	authHeader: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia29ibyIsImlkIjoiNjY0MzI5Zjk4YmIxMjg5MDY5ZTdhMjg3IiwiZXhwIjoxNzE1NzQ2MzQyfQ._4iBmKB15zFGjG8UBntEaT8Xoqd3ZeyLeI1k9MXJFR4,and len: 1
+
+2024-05-15 02:21:59	INFO	logger/logger.go:84	authHeader: j eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia29ibyIsImlkIjoiNjY0MzI5Zjk4YmIxMjg5MDY5ZTdhMjg3IiwiZXhwIjoxNzE1NzQ2MzQyfQ._4iBmKB15zFGjG8UBntEaT8Xoqd3ZeyLeI1k9MXJFR4,and len: 2
+
+2024-05-15 02:23:29	INFO	logger/logger.go:84	authHeader: j eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia29ibyIsImlkIjoiNjY0MzI5Zjk4YmIxMjg5MDY5ZTdhMjg3IiwiZXhwIjoxNzE1NzQ2OTg5fQ.an9ijMiKLQr7wJ1RuxF7RmJlVZ2WFhDp_SL11-A22HY,and len: 2
+
+2024-05-15 10:25:42	INFO	logger/logger.go:84	App is starting...
+2024-05-15 10:25:42	INFO	logger/logger.go:84	The App is running in development env
+2024-05-15 02:25:51	INFO	logger/logger.go:84	authHeader: j eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia29ibyIsImlkIjoiNjY0MzI5Zjk4YmIxMjg5MDY5ZTdhMjg3IiwiZXhwIjoxNzE1NzQ2OTg5fQ.an9ijMiKLQr7wJ1RuxF7RmJlVZ2WFhDp_SL11-A22HY,and len: 2
+
+2024-05-15 02:26:49	INFO	logger/logger.go:84	authHeader: jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia29ibyIsImlkIjoiNjY0MzI5Zjk4YmIxMjg5MDY5ZTdhMjg3IiwiZXhwIjoxNzE1NzQ2OTg5fQ.an9ijMiKLQr7wJ1RuxF7RmJlVZ2WFhDp_SL11-A22HY,and len: 2
+
+2024-05-15 11:40:17	INFO	logger/logger.go:84	App is starting...
+2024-05-15 11:40:17	INFO	logger/logger.go:84	The App is running in development env
+2024-05-15 11:46:00	INFO	logger/logger.go:84	App is starting...
+2024-05-15 11:46:00	INFO	logger/logger.go:84	The App is running in development env
+2024-05-15 11:49:40	INFO	logger/logger.go:84	App is starting...
+2024-05-15 11:49:40	INFO	logger/logger.go:84	The App is running in development env
+2024-05-15 03:49:50	ERROR	logger/logger.go:96	signature is invalid
+2024-05-15 12:00:41	INFO	logger/logger.go:84	App is starting...
+2024-05-15 12:00:41	INFO	logger/logger.go:84	The App is running in development env
+2024-05-15 04:01:07	ERROR	logger/logger.go:96	signature is invalid
+2024-05-15 12:04:38	INFO	logger/logger.go:84	App is starting...
+2024-05-15 12:04:38	INFO	logger/logger.go:84	The App is running in development env
+2024-05-15 04:04:42	ERROR	logger/logger.go:96	signature is invalid
+2024-05-15 04:04:58	ERROR	logger/logger.go:96	signature is invalid
+2024-05-15 12:12:45	INFO	logger/logger.go:84	App is starting...
+2024-05-15 12:12:45	INFO	logger/logger.go:84	The App is running in development env
+2024-05-15 04:12:45	INFO	logger/logger.go:84	timeout:2s
+
+2024-05-15 04:13:09	ERROR	logger/logger.go:96	signature is invalid
+2024-05-15 13:54:03	INFO	logger/logger.go:84	App is starting...
+2024-05-15 13:54:03	INFO	logger/logger.go:84	The App is running in development env
+2024-05-15 05:54:03	INFO	logger/logger.go:84	timeout:2s
+
+2024-05-15 17:49:19	INFO	logger/logger.go:84	App is starting...
+2024-05-15 17:49:19	INFO	logger/logger.go:84	The App is running in development env
+2024-05-15 09:49:19	INFO	logger/logger.go:84	timeout:2s
+
+2024-05-15 17:52:44	INFO	logger/logger.go:84	App is starting...
+2024-05-15 17:52:44	INFO	logger/logger.go:84	The App is running in development env
+2024-05-15 09:52:44	INFO	logger/logger.go:84	timeout:2s
+
+2024-05-15 17:59:00	INFO	logger/logger.go:84	App is starting...
+2024-05-15 17:59:00	INFO	logger/logger.go:84	The App is running in development env
+2024-05-15 09:59:00	INFO	logger/logger.go:84	timeout:2s
+
